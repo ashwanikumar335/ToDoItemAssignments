@@ -1,0 +1,15 @@
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Entities.exe
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Interfaces.exe
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Interfaces.deps.json
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Interfaces.runtimeconfig.json
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Interfaces.runtimeconfig.dev.json
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Interfaces.dll
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Interfaces.pdb
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Entities.dll
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\bin\Debug\netcoreapp3.1\ToDoItems.Entities.pdb
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\obj\Debug\netcoreapp3.1\ToDoItems.Interfaces.csprojAssemblyReference.cache
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\obj\Debug\netcoreapp3.1\ToDoItems.Interfaces.AssemblyInfoInputs.cache
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\obj\Debug\netcoreapp3.1\ToDoItems.Interfaces.AssemblyInfo.cs
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\obj\Debug\netcoreapp3.1\ToDoItems.Interfaces.csproj.CopyComplete
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\obj\Debug\netcoreapp3.1\ToDoItems.Interfaces.dll
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Interfaces\obj\Debug\netcoreapp3.1\ToDoItems.Interfaces.pdb

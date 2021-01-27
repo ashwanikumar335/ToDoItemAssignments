@@ -1,0 +1,11 @@
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\bin\Debug\netcoreapp3.1\ToDoItems.Entities.exe
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\bin\Debug\netcoreapp3.1\ToDoItems.Entities.deps.json
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\bin\Debug\netcoreapp3.1\ToDoItems.Entities.runtimeconfig.json
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\bin\Debug\netcoreapp3.1\ToDoItems.Entities.runtimeconfig.dev.json
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\bin\Debug\netcoreapp3.1\ToDoItems.Entities.dll
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\bin\Debug\netcoreapp3.1\ToDoItems.Entities.pdb
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\obj\Debug\netcoreapp3.1\ToDoItems.Entities.AssemblyInfoInputs.cache
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\obj\Debug\netcoreapp3.1\ToDoItems.Entities.AssemblyInfo.cs
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\obj\Debug\netcoreapp3.1\ToDoItems.Entities.dll
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\obj\Debug\netcoreapp3.1\ToDoItems.Entities.pdb
+D:\ToDoItem_assignment\FirstToDoItem\ToDoItems.Entities\obj\Debug\netcoreapp3.1\ToDoItems.Entities.csprojAssemblyReference.cache

@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "ToDoItems.Interfaces/1.0.0": {
+        "dependencies": {
+          "ToDoItems.Entities": "1.0.0"
+        },
+        "runtime": {
+          "ToDoItems.Interfaces.dll": {}
+        }
+      },
+      "ToDoItems.Entities/1.0.0": {
+        "runtime": {
+          "ToDoItems.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ToDoItems.Interfaces/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ToDoItems.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

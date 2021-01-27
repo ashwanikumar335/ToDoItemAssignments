@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ToDoItems.API</name>
+    </assembly>
+    <members>
+        <member name="T:Todo.API.Controllers.v1.TodoItemsController">
+            <summary>
+            Controller for Todo items related operations
+            </summary>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.Get(Todo.Core.Models.Request.PagingParameters)">
+            <summary>
+            Gets all todo items for a user matching the filter criteria.
+            </summary>
+            <param name="input">Paging parameters for the request</param>
+            <returns>Action result containing PagedResult or ErrorResponse</returns>
+            <response code="200">Gets the response model and returns Ok response</response>
+            <response code="400">User was not found in the database</response>
+            <response code="401">The user is not logged in</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.GetItemById(System.Int32)">
+            <summary>
+            Get a todo item by id
+            </summary>
+            <param name="id">Id of the item</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="200">Gets the response model and returns Ok response</response>
+            <response code="400">User or item was not found in the database</response>
+            <response code="401">The user is not logged in</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.Create(Todo.Core.Models.Dtos.CreateTodoItemDto)">
+            <summary>
+            Creates a TodoItem.
+            </summary>
+            <param name="input"></param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="201">Creates todo item record and returns the location where created.</response>
+            <response code="401">The user is not logged in</response>
+            <response code="400">User or list was not found in the database</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.Update(Todo.Core.Models.Dtos.UpdateTodoItemDto)">
+            <summary>
+            Update todo item
+            </summary>
+            <param name="updateObj">Update object</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="200">Update todo item and returns Ok result</response>
+            <response code="401">User is not logged in.</response>
+            <response code="400">Invalid data. No data exists for the given Id</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.Patch(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{Todo.Core.Models.Dtos.UpdateTodoItemDto})">
+            <summary>
+            Update todo item using JsonPatchDocument
+            </summary>
+            <param name="itemId"></param>
+            <param name="patchDocument">Patch data</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="200">Update todo item and returns Ok result</response>
+            <response code="401">User is not logged in.</response>
+            <response code="400">Invalid data. No data exists for the given Id</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.Delete(System.Int32)">
+            <summary>
+            Delete todo item
+            </summary>
+            <param name="id">Id of the object to be deleted</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="200">Deletes todo item and returns Ok result</response>
+            <response code="401">User is not logged in.</response>
+            <response code="400">Invalid data. No data exists for the given Id</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.GetLabels(System.Int32)">
+            <summary>
+            Gets the labels for todo item
+            </summary>
+            <param name="itemId">Id of the item</param>
+            <returns>Action result containing PagedResult or ErrorResponse</returns>
+            <response code="200">Gets the response model and returns Ok response</response>
+            <response code="400">User or item was not found in the database</response>
+            <response code="401">The user is not logged in</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.AssignLabel(Todo.Core.Models.Dtos.CreateLabelDto)">
+            <summary>
+            Assign a label to a TodoItem.
+            </summary>
+            <param name="input">Create label dto</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="201">Creates label and returns the location where created.</response>
+            <response code="401">The user is not logged in</response>
+            <response code="400">User or item was not found in the database</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.UpdateLabel(Todo.Core.Models.Dtos.UpdateLabelDto)">
+            <summary>
+            Update label for a todo item
+            </summary>
+            <param name="updateDto">Update object</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="200">Update label for todo item and returns Ok result</response>
+            <response code="401">User is not logged in.</response>
+            <response code="400">Item or label does not exist</response>
+        </member>
+        <member name="M:Todo.API.Controllers.v1.TodoItemsController.DeleteLabel(Todo.Core.Models.Dtos.DeleteLabelDto)">
+            <summary>
+            Delete label for a todo item
+            </summary>
+            <param name="deleteDto">deleteDto containing item id and label name</param>
+            <returns>Action result containing todo item or ErrorResponse</returns>
+            <response code="200">Delete label for todo item and returns Ok result</response>
+            <response code="401">User is not logged in.</response>
+            <response code="400">item or label does not exist</response>
+        </member>
+        <member name="T:Todo.API.Middlewares.CorrelationIdMiddleware">
+            <summary>
+            Adds x-correlation-id to the request and response.
+            If the correlation id header already exists, passes it on to the response.
+            </summary>
+        </member>
+        <member name="T:ToDoItems.API.Middlewares.ContentLocationExtension">
+            <summary>
+            Adds content location header to the responses
+            </summary>
+        </member>
+        <member name="T:ToDoItems.API.Middlewares.ExceptionHandlingExtension">
+            <summary>
+            Middleware to grab all exceptions and send a standard response model.
+            Also logs the exception.
+            </summary>
+        </member>
+        <member name="T:ToDoItems.API.Middlewares.RequestLoggingExtension">
+            <summary>
+            ModelExtension to log execution time of the incoming request
+            </summary>
+        </member>
+        <member name="T:ToDoItems.API.ServiceCollectionExtensions">
+            <summary>
+            Extension methods for IServiceCollection 
+            </summary>
+        </member>
+        <member name="M:ToDoItems.API.ServiceCollectionExtensions.AddVersioning(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add versioning for API and swagger UI configuration
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ToDoItems.API.ServiceCollectionExtensions.AddSwaggerGenWithAuth(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds SwaggerGen with JWT Authentication
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:ToDoItems.API.ServiceCollectionExtensions.AddJwtAuthentication(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.String)">
+            <summary>
+            Adds JWT Authentication flow
+            </summary>
+            <param name="services"></param>
+            <param name="issuer"></param>
+            <param name="key"></param>
+        </member>
+        <member name="T:ToDoItems.API.Swagger.AuthorizeOperationFilter">
+            <summary>
+            Enables Token authentication on swagger UI only for the methods with authorize attribute
+            </summary>
+        </member>
+        <member name="T:ToDoItems.API.Swagger.CorrelationIdOperationFilter">
+            <summary>
+            Allows x-correlation-id to be passed in the headers using the swagger UI
+            </summary>
+        </member>
+    </members>
+</doc>
